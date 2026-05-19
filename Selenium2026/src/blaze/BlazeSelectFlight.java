@@ -1,4 +1,4 @@
-package practice;
+package blaze;
 
 import java.io.IOException;
 
@@ -10,7 +10,8 @@ import locator.PreCondition;
 import takeScreenShot.TakeScreenShot;
 
 public class BlazeSelectFlight {
-	public static void searchResults(WebDriver driver) throws IOException, InterruptedException {
+	public static WebDriver searchResults() throws IOException, InterruptedException {
+		WebDriver driver = BlazeSearchFlight.selectSrcAndDest();
 		String resultURL = "https://blazedemo.com/purchase.php";
 		try {
 			WebElement searchResultPage = driver
@@ -33,5 +34,6 @@ public class BlazeSelectFlight {
 			System.out.println("Test failed " + BlazeSelectFlight.class.getSimpleName() + e);
 		}
 		Thread.sleep(2000);
+		return driver;
 	}
 }

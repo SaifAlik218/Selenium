@@ -1,4 +1,4 @@
-package practice;
+package automationExercise;
 
 import java.time.Duration;
 

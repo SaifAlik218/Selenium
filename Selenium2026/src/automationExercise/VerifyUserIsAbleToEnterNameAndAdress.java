@@ -1,4 +1,4 @@
-package practice;
+package automationExercise;
 
 import java.time.Duration;
 
@@ -18,7 +18,7 @@ public class VerifyUserIsAbleToEnterNameAndAdress {
 		String className = VerifyUserIsAbleToEnterNameAndAdress.class.getSimpleName();
 		String userName = "Saif";
 		String emailAddress = "saif" + System.currentTimeMillis() + "@gmail.com";
-		WebDriver driver = VerifyUserIsAbleToSignIn.newUserSignup();
+		WebDriver driver = VerifyUserIsAbleToSignIn.newUserSignup();//calling another method and initiazation
 		String loginURL = "https://automationexercise.com/login";
 		WebDriverWait explicitWait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		WebElement signUpText = driver.findElement(By.xpath("//h2[text()='New User Signup!']"));

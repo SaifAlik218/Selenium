@@ -1,4 +1,4 @@
-package practice;
+package blaze;
 
 import java.io.IOException;
 import java.util.List;
@@ -9,11 +9,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
+import locator.PreCondition;
 import takeScreenShot.TakeScreenShot;
 
 public class BlazeUserDetailsPage {
 
-	public static void userDetails(WebDriver driver) throws IOException {
+	public static WebDriver userDetails() throws IOException, InterruptedException {
+		WebDriver driver = BlazeSelectFlight.searchResults();
 		WebElement userName = driver.findElement(By.id("inputName"));
 		WebElement address = driver.findElement(By.id("address"));
 		WebElement city = driver.findElement(By.id("city"));
@@ -63,6 +65,8 @@ public class BlazeUserDetailsPage {
 			TakeScreenShot.failTakeScreenShot(driver, BlazeUserDetailsPage.class.getSimpleName());
 			System.out.println("Test failed " + BlazeUserDetailsPage.class.getSimpleName());
 		}
+		PreCondition.closeBrowser(driver);
+		return driver;
 	}
 
 }

@@ -1,4 +1,4 @@
-package practice;
+package blaze;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -26,7 +26,9 @@ public class BlazeSearchFlight {
 		FileHandler.copy(src, file);
 	}
 
-	public static void selectSrcAndDest(WebDriver driver) throws InterruptedException, IOException {
+	public static WebDriver selectSrcAndDest() throws InterruptedException, IOException {
+		WebDriver driver;
+		driver = PreCondition.openBrowser();
 		String resultURL = "https://blazedemo.com/reserve.php";
 		driver.get("https://blazedemo.com/");
 		Thread.sleep(3000);
@@ -63,6 +65,7 @@ public class BlazeSearchFlight {
 			System.out.println("Test failed" + BlazeSearchFlight.class.getSimpleName());
 		}
 		Thread.sleep(3000);
+		return driver;
 	}
 
 }
