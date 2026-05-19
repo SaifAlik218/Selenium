@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="/Users/testuser/Downloads/selenium-java-4-3/selenium-support-4.43.0.jar"/>
+	<classpathentry kind="lib" path="/Users/testuser/Downloads/selenium-java-4-3/selenium-safari-driver-4.43.0.jar"/>
+	<classpathentry kind="lib" path="/Users/testuser/Downloads/selenium-java-4-3/selenium-remote-driver-4.43.0.jar"/>
+	<classpathentry kind="lib" path="/Users/testuser/Downloads/selenium-java-4-3/selenium-os-4.43.0.jar"/>
+	<classpathentry kind="lib" path="/Users/testuser/Downloads/selenium-java-4-3/selenium-manager-4.43.0.jar"/>
+	<classpathentry kind="lib" path="/Users/testuser/Downloads/selenium-java-4-3/selenium-json-4.43.0.jar"/>
+	<classpathentry kind="lib" path="/Users/testuser/Downloads/selenium-java-4-3/selenium-java-4.43.0.jar"/>
+	<classpathentry kind="lib" path="/Users/testuser/Downloads/selenium-java-4-3/selenium-ie-driver-4.43.0.jar"/>
+	<classpathentry kind="lib" path="/Users/testuser/Downloads/selenium-java-4-3/selenium-http-4.43.0.jar"/>
+	<classpathentry kind="lib" path="/Users/testuser/Downloads/selenium-java-4-3/selenium-firefox-driver-4.43.0.jar"/>
+	<classpathentry kind="lib" path="/Users/testuser/Downloads/selenium-java-4-3/selenium-edge-driver-4.43.0.jar"/>
+	<classpathentry kind="lib" path="/Users/testuser/Downloads/selenium-java-4-3/selenium-devtools-v147-4.43.0.jar"/>
+	<classpathentry kind="lib" path="/Users/testuser/Downloads/selenium-java-4-3/selenium-devtools-v146-4.43.0.jar"/>
+	<classpathentry kind="lib" path="/Users/testuser/Downloads/selenium-java-4-3/selenium-devtools-v145-4.43.0.jar"/>
+	<classpathentry kind="lib" path="/Users/testuser/Downloads/selenium-java-4-3/selenium-chromium-driver-4.43.0.jar"/>
+	<classpathentry kind="lib" path="/Users/testuser/Downloads/selenium-java-4-3/selenium-chrome-driver-4.43.0.jar"/>
+	<classpathentry kind="lib" path="/Users/testuser/Downloads/selenium-java-4-3/selenium-api-4.43.0.jar"/>
+	<classpathentry kind="lib" path="/Users/testuser/Downloads/selenium-java-4-3/opentelemetry-sdk-trace-1.60.1.jar"/>
+	<classpathentry kind="lib" path="/Users/testuser/Downloads/selenium-java-4-3/opentelemetry-sdk-metrics-1.60.1.jar"/>
+	<classpathentry kind="lib" path="/Users/testuser/Downloads/selenium-java-4-3/opentelemetry-sdk-logs-1.60.1.jar"/>
+	<classpathentry kind="lib" path="/Users/testuser/Downloads/selenium-java-4-3/opentelemetry-sdk-extension-autoconfigure-spi-1.60.1.jar"/>
+	<classpathentry kind="lib" path="/Users/testuser/Downloads/selenium-java-4-3/opentelemetry-sdk-extension-autoconfigure-1.60.1.jar"/>
+	<classpathentry kind="lib" path="/Users/testuser/Downloads/selenium-java-4-3/opentelemetry-sdk-common-1.60.1.jar"/>
+	<classpathentry kind="lib" path="/Users/testuser/Downloads/selenium-java-4-3/opentelemetry-sdk-1.60.1.jar"/>
+	<classpathentry kind="lib" path="/Users/testuser/Downloads/selenium-java-4-3/opentelemetry-exporter-logging-1.60.1.jar"/>
+	<classpathentry kind="lib" path="/Users/testuser/Downloads/selenium-java-4-3/opentelemetry-context-1.60.1.jar"/>
+	<classpathentry kind="lib" path="/Users/testuser/Downloads/selenium-java-4-3/opentelemetry-common-1.60.1.jar"/>
+	<classpathentry kind="lib" path="/Users/testuser/Downloads/selenium-java-4-3/opentelemetry-api-1.60.1.jar"/>
+	<classpathentry kind="lib" path="/Users/testuser/Downloads/selenium-java-4-3/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"/>
+	<classpathentry kind="lib" path="/Users/testuser/Downloads/selenium-java-4-3/jspecify-1.0.0.jar"/>
+	<classpathentry kind="lib" path="/Users/testuser/Downloads/selenium-java-4-3/j2objc-annotations-2.8.jar"/>
+	<classpathentry kind="lib" path="/Users/testuser/Downloads/selenium-java-4-3/guava-33.5.0-jre.jar"/>
+	<classpathentry kind="lib" path="/Users/testuser/Downloads/selenium-java-4-3/failureaccess-1.0.3.jar"/>
+	<classpathentry kind="lib" path="/Users/testuser/Downloads/selenium-java-4-3/error_prone_annotations-2.5.1.jar"/>
+	<classpathentry kind="lib" path="/Users/testuser/Downloads/selenium-java-4-3/byte-buddy-1.18.8-jdk5.jar"/>
+	<classpathentry kind="lib" path="/Users/testuser/Downloads/selenium-java-4-3/auto-service-annotations-1.1.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
