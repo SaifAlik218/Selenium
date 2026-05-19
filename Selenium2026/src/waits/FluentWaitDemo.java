@@ -18,8 +18,9 @@ public class FluentWaitDemo {
 		driver.findElement(By.xpath("//input[@type='text']")).sendKeys("Saif");
 		driver.findElement(By.xpath("//input[@type='email' and @data-qa='signup-email']")).sendKeys("saif7889@xyz.com");
 		WebElement signUpButton = driver.findElement(By.xpath("//button[text()='Signup']"));
-
-		FluentWait wait = new FluentWait(driver);
+		// “Create a FluentWait object that works using this WebDriver instance and
+		// store it inside variable wait.”
+		FluentWait<WebDriver> wait = new FluentWait<>(driver);//---> constructor
 		wait.withTimeout(Duration.ofSeconds(10));
 		wait.pollingEvery(Duration.ofMillis(200));
 		wait.until(ExpectedConditions.elementToBeClickable(signUpButton));

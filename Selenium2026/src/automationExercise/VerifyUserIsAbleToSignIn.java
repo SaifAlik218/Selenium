@@ -23,10 +23,10 @@ public class VerifyUserIsAbleToSignIn {
 				signUpLink.click();
 				if (driver.getCurrentUrl().equals(targetURL)) {
 					System.out.println("User landed on login page");
-					TakeScreenShot.sucessTakeScreenShot(driver, className);
+//					TakeScreenShot.sucessTakeScreenShot(driver, className);
 				} else {
 					System.out.println("User failed to land on login page");
-					TakeScreenShot.failTakeScreenShot(driver, className);
+//					TakeScreenShot.failTakeScreenShot(driver, className);
 				}
 			}
 
