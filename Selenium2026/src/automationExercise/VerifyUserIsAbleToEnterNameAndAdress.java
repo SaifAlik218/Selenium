@@ -18,9 +18,7 @@ public class VerifyUserIsAbleToEnterNameAndAdress {
 	protected static WebElement emailAddressField;
 	static String className = VerifyUserIsAbleToEnterNameAndAdress.class.getSimpleName();
 	protected static String userName = "Saif";
-
 	public static WebDriver enterUserAndEmailAddress() {
-		String emailAddress = "saif" + System.currentTimeMillis() + "@gmail.com";
 		driver = VerifyUserIsAbleToSignIn.newUserSignup();// calling another method and initiazation
 		String loginURL = "https://automationexercise.com/login";
 		WebDriverWait explicitWait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -33,7 +31,7 @@ public class VerifyUserIsAbleToEnterNameAndAdress {
 				userNameField.sendKeys(userName);
 				emailAddressField = explicitWait.until(ExpectedConditions
 						.visibilityOfElementLocated(By.xpath("(//input[@placeholder='Email Address'])[2]")));
-				emailAddressField.sendKeys(emailAddress);
+				emailAddressField.sendKeys(createEmailAddress());
 				WebElement signUpButton = driver.findElement(By.xpath("//button[text()='Signup']"));
 				explicitWait.until(ExpectedConditions.elementToBeClickable(signUpButton));
 //				TakeScreenShot.sucessTakeScreenShot(driver, className);
@@ -53,10 +51,14 @@ public class VerifyUserIsAbleToEnterNameAndAdress {
 //				TakeScreenShot.failTakeScreenShot(driver, className);
 			}
 		} catch (Exception e) {
-			System.out.println("No such element found..");
-			e.printStackTrace();
+			 throw new RuntimeException("Failed while entering signup details", e);
 		}
 		return driver;
+	}
+	public static String createEmailAddress()
+	{
+		return "saif" + System.currentTimeMillis() + "@gmail.com";
+	
 	}
 
 }
