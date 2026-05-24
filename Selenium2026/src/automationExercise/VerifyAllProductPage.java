@@ -1,11 +1,6 @@
 package automationExercise;
 
 import java.time.Duration;
-import java.util.Iterator;
-import java.util.List;
-
-import org.jspecify.annotations.NonNull;
-import org.jspecify.annotations.Nullable;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -36,7 +31,6 @@ public class VerifyAllProductPage extends VerifyTestCasePage {
 			WebElement productLink = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@href='/product_details/1']")));
 			productLink.click();
-			Thread.sleep(2000);
 			dismissIfAlertIsPresent();
 			dismissAdWindow();
 			productDetailsPage();
@@ -61,7 +55,6 @@ public class VerifyAllProductPage extends VerifyTestCasePage {
 		wait.until(ExpectedConditions.urlToBe(targetProductPageURL));
 		if (driver.getCurrentUrl().equals(targetProductPageURL)) {
 			System.out.println("User has sucessfully landed on product details page");
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h2[text()='Blue Top']")));
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[text()='Category: Women > Tops']")));
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='Rs. 500']")));

@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import locator.PreCondition;
 import takeScreenShot.TakeScreenShot;
 
-public class VerifyUserIsAbleToEnterNameAndAdress {
+public class VerifyUserIsAbleToEnterNameAndAdress extends VerifyUserIsAbleToSignIn {
 
 	protected static WebDriver driver;
 	protected static WebElement userNameField;

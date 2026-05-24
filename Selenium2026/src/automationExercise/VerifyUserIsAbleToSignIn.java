@@ -10,8 +10,10 @@ import takeScreenShot.TakeScreenShot;
 
 public class VerifyUserIsAbleToSignIn {
 	protected static String URL = "https://automationexercise.com/";
+	protected static WebDriver driver;
+	protected static By automationExercise = By.xpath("//img[@alt='Website for automation practice']");
+
 	public static WebDriver newUserSignup() {
-		WebDriver driver;
 		String className = VerifyUserIsAbleToSignIn.class.getSimpleName();
 		driver = PreCondition.openBrowser();
 		String targetURL = "https://automationexercise.com/login";
