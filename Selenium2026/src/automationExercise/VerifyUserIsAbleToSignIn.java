@@ -9,14 +9,14 @@ import locator.PreCondition;
 import takeScreenShot.TakeScreenShot;
 
 public class VerifyUserIsAbleToSignIn {
-
+	protected static String URL = "https://automationexercise.com/";
 	public static WebDriver newUserSignup() {
 		WebDriver driver;
 		String className = VerifyUserIsAbleToSignIn.class.getSimpleName();
 		driver = PreCondition.openBrowser();
 		String targetURL = "https://automationexercise.com/login";
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.get("https://automationexercise.com/");
+		driver.get(URL);
 		try {
 			WebElement signUpLink = driver.findElement(By.xpath("//a[text()=' Signup / Login']"));
 			if (signUpLink.isDisplayed()) {
