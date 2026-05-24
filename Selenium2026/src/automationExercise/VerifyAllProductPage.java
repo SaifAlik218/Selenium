@@ -127,8 +127,4 @@ public class VerifyAllProductPage extends VerifyTestCasePage {
 			System.out.println("No add pop-up present - conitiuing");
 		}
 	}
-
-	public static void main(String[] args) {
-		allProductPage();
-	}
 }
