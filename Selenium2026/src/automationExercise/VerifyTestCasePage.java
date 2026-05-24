@@ -15,7 +15,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import locator.PreCondition;
 
 public class VerifyTestCasePage extends VerifyUserIsAbleToEnterDetails {
-	protected static WebDriver driver;
 	protected static String URL = "https://automationexercise.com/#google_vignette";
 	protected static String testCasePage = "https://automationexercise.com/test_cases";
 	protected static int pageScroll = 5;

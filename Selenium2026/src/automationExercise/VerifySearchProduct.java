@@ -13,7 +13,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import locator.PreCondition;
 
 public class VerifySearchProduct extends VerifyAllProductPage {
-	protected static WebDriver driver;
 	protected static String productShirt = "Shirt";
 	protected static String productShirtURL = "https://automationexercise.com/products?search=shirt";
 	protected static String className = VerifySearchProduct.class.getSimpleName();
@@ -62,13 +61,9 @@ public class VerifySearchProduct extends VerifyAllProductPage {
 		}
 	}
 
-	private static void scrollWebPage() {
+	public static void scrollWebPage() {
 		WebElement subscriptionText = driver.findElement(By.xpath("//h2[text()='Subscription']"));
 		js.executeScript("arguments[0].scrollIntoView(true)", subscriptionText);
 		System.out.println("Scrolled till expected: " + subscriptionText.getText());
-	}
-
-	public static void main(String[] args) {
-		searchProduct();
 	}
 }

@@ -13,7 +13,6 @@ import takeScreenShot.TakeScreenShot;
 
 public class VerifyUserIsAbleToEnterNameAndAdress extends VerifyUserIsAbleToSignIn {
 
-	protected static WebDriver driver;
 	protected static WebElement userNameField;
 	protected static WebElement emailAddressField;
 	static String className = VerifyUserIsAbleToEnterNameAndAdress.class.getSimpleName();

@@ -14,7 +14,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import locator.PreCondition;
 
 public class VerifyContactUsForm extends VerifyUserIsAbleToEnterDetails {
-	protected static WebDriver driver;
 	protected static String expectedText = "Success! Your details have been submitted successfully.";
 
 	public static WebDriver contactUsForm() {

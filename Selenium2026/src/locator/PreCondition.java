@@ -1,7 +1,10 @@
 package locator;
 
+import java.io.File;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -14,46 +17,33 @@ public class PreCondition {
 	public static WebDriver driver;
 
 	public static WebDriver openBrowser() {
-		    ChromeOptions options = new ChromeOptions();
-		    options.addArguments(
-		        "--disable-notifications",
-		        "--disable-popup-blocking",
-		        "--disable-infobars",
-		        "--no-sandbox",
-		        "--disable-extensions",
-		        "--disable-blink-features=AutomationControlled" // hides automation flag
-		    );
-		    // Block known ad domains
-		    Map<String, Object> prefs = new HashMap<>();
-		    prefs.put("profile.default_content_setting_values.ads", 2);
-		    prefs.put("profile.default_content_setting_values.notifications", 2);
-		    options.setExperimentalOption("prefs", prefs);
+		ChromeOptions options = new ChromeOptions();
 
-		driver = new ChromeDriver(options);
+		options.addArguments("user-data-dir=/Users/testuser/ChromeAutomationProfile");
+
+		options.addArguments("--disable-notifications");
+
+		WebDriver driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		return driver;
 	}
-	public static WebDriver openBrowser(String URL) {
-	    ChromeOptions options = new ChromeOptions();
-	    options.addArguments(
-	        "--disable-notifications",
-	        "--disable-popup-blocking",
-	        "--disable-infobars",
-	        "--no-sandbox",
-	        "--disable-extensions",
-	        "--disable-blink-features=AutomationControlled" // hides automation flag
-	    );
-	    // Block known ad domains
-	    Map<String, Object> prefs = new HashMap<>();
-	    prefs.put("profile.default_content_setting_values.ads", 2);
-	    prefs.put("profile.default_content_setting_values.notifications", 2);
-	    options.setExperimentalOption("prefs", prefs);
 
-	driver = new ChromeDriver(options);
-	driver.manage().window().maximize();
-	driver.get(URL);
-	return driver;
-}
+	public static WebDriver openBrowser(String URL) {
+
+		ChromeOptions options = new ChromeOptions();
+
+		options.addArguments("user-data-dir=/Users/testuser/ChromeAutomationProfile");
+
+		options.addArguments("--disable-notifications");
+
+		WebDriver driver = new ChromeDriver(options);
+
+		driver.manage().window().maximize();
+
+		driver.get(URL);
+
+		return driver;
+	}
 
 	public static void closeBrowser(WebDriver driver) {
 		driver.manage().window().minimize();

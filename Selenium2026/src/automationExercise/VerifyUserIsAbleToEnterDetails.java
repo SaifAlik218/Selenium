@@ -27,7 +27,6 @@ public class VerifyUserIsAbleToEnterDetails extends VerifyUserIsAbleToEnterNameA
 	protected static String cityName = "Bangalore";
 	protected static String zipCodeValue = "560114";
 	protected static String mobileNumber = "8147100694";
-	protected static WebDriver driver;
 	protected static FluentWait<WebDriver> fluentwait;
 	protected static JavascriptExecutor js;
 	protected static WebDriverWait wait;
